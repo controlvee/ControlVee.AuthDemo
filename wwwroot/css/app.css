@@ -183,3 +183,21 @@ app {
         display: block;
     }
 }
+
+/*----------------------------mine----------------------------*/
+
+.blue {
+    color: #1884f1;
+}
+
+.green {
+    color: #7cff5d;
+}
+
+.orange {
+    color: #ffc03f;
+}
+
+.row {
+    margin: 10px;
+}
