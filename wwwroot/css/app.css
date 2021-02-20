@@ -1,7 +1,8 @@
 ﻿@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
 
 html, body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   background-color: #32383e;
 }
 
 a, .btn-link {
@@ -48,7 +49,7 @@ app {
         }
 
 .sidebar {
-    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+    background-color: #252526;
 }
 
     .sidebar .top-row {
@@ -187,7 +188,7 @@ app {
 /*----------------------------mine----------------------------*/
 
 .blue {
-    color: #1884f1;
+    color: #3897f7;
 }
 
 .green {
@@ -201,3 +202,18 @@ app {
 .row {
     margin: 10px;
 }
+
+.title {
+    color:#ff6549;
+    font-size: x-large;
+    margin: 10px;
+}
+
+.body-text {
+    color: #c7c7c7
+}
+
+.card-header {
+    margin: 40px;
+}
+

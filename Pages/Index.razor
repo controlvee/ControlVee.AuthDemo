@@ -1,24 +1,153 @@
 ﻿@page "/"
 
-<h1>Azure Active Directory (Azure AD) Demo</h1>
-
-<div class="modal-header">This app demos the Microsoft identity platform using Azure AD.</div>
-
+<div class="modal-header modal-title"></div>
 <div class="row">
-    <a class="alert-success" href="https://docs.microsoft.com/en-us/azure/active-directory/develop/tutorial-blazor-webassembly">Tutorial: Sign in users and call a protected API from a Blazor WebAssembly app</a>
+    <a class="mark" href="https://docs.microsoft.com/en-us/azure/active-directory/develop/tutorial-blazor-webassembly">Tutorial: Sign in users and call a protected API from a Blazor WebAssembly app</a>
 </div>
 
+<h1 class="modal-header text-white">This app demos the Microsoft identity platform using Azure AD.</h1>
 
-<div class="row bg-dark">
-    <a class="text-white">
-        <span class="blue">dotnet new</span>
-        <span class="green">--install</span>
+<div class="row bg-dark container">
+   
+    <div class=" align-self-center">
+        <div class="title">step 1</div>
+        <pre class="body-text">
+    To create the app you need the latest Blazor templates. You can install them for the .NET Core CLI with the following command:
+    </pre>
+        <div class="card-header container-fluid text-light">
+            <a class="text-white">
+                <span class="blue"> dotnet new</span>
+                <span class="green"> --install</span>
+                <span class="text-white"> Microsoft.AspNetCore.Components.WebAssembly.Templates</span>
+                <span class="text-white">::3.2.1</span>
+            </a>
+        </div>
+    </div>
+  
+   
 
-        Microsoft.AspNetCore.Components.WebAssembly.
+    <div class="card-body">
+        <div class="title  align-self-center">a.</div>
+        <pre class="body-text">
+Microsoft Graph contains APIs that provide access to Microsoft 365 data for your users, 
+and it supports the tokens issued by the Microsoft identity platform, which makes it a good protected 
+API to use as an example. In this section, you add code to call Microsoft Graph and display the user's 
+emails on the application's "Fetch data" page.
 
-        <span class="orange">Templates</span>
-
-        ::3.2.1
-    </a>
+This section is written using a common approach to calling a protected API using a named client. 
+The same method can be used for other protected APIs you want to call. However, if you do plan to call Microsoft 
+Graph from your application you can use the Graph SDK to reduce boilerplate. The .NET docs contain instructions 
+on how to use the Graph SDK.
+        </pre>
+    </div>
 </div>
-<img src="~/instructions_1.png" />
+
+<div class="row bg-dark container">
+   
+    <div class="align-self-center">
+        <div class="title">step 2</div>
+        <pre class="body-text">
+    To create the app you need the latest Blazor templates. You can install them for the .NET Core CLI with the following command:
+    </pre>
+        <div class="card-header container-fluid text-light">
+            <a class="text-white align-self-center">
+                <span class="blue"> dotnet new</span>
+                <span class="text-white"> blazorwasm2</span>
+                <span class="green"> --auth</span>
+                <span class="text-white"> SingleOrg</span>
+                <span class="green"> --calls-graph -o</span>
+                <span class="green"> --auth</span>
+                <span class="orange"> {APP NAME}</span>
+                <span class="green"> --client-id</span>
+                <span class="orange"> {CLIENT ID}</span>
+                <span class="green"> --tenant-id</span>
+                <span class="orange"> {TENANT ID}</span>
+            </a>
+        </div>
+
+        <table class="table table-bordered text-white">
+            <thead>
+                <tr>
+                    <th scope="col">placeholder</th>
+                    <th scope="col">portal name</th>
+                    <th scope="col">example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="orange"> {APP NAME}</span></td>
+                    <td>-----</td>
+                    <td><mark>BlazorWASMSample</mark></td>
+                </tr>
+                <tr>
+                    <td><span class="orange"> {CLIENT ID}</span></td>
+                    <td>Application (client) ID</td>
+                    <td><mark>41451fa7-0000-0000-0000-69eff5a761fd</mark></td>
+                </tr>
+                <tr>
+                    <td><span class="orange"> {TENANT ID}</span></td>
+                    <td>Directory (tenant) ID</td>
+                    <td><mark>e86c78e2-0000-0000-0000-918e0565a45e</mark></td>
+                </tr>
+            </tbody>
+        </table>
+
+
+
+    </div>
+   
+
+    <div class="card-body">
+        <div class="title  align-self-center">a.</div>
+        <pre class="body-text">
+Microsoft Graph contains APIs that provide access to Microsoft 365 data for your users, 
+and it supports the tokens issued by the Microsoft identity platform, which makes it a good protected 
+API to use as an example. In this section, you add code to call Microsoft Graph and display the user's 
+emails on the application's "Fetch data" page.
+
+This section is written using a common approach to calling a protected API using a named client. 
+The same method can be used for other protected APIs you want to call. However, if you do plan to call Microsoft 
+Graph from your application you can use the Graph SDK to reduce boilerplate. The .NET docs contain instructions 
+on how to use the Graph SDK.
+        </pre>
+    </div>
+</div>
+
+<div class="row bg-dark container">
+    
+    <div class=" align-self-center">
+        <div class="title">step 3</div>
+        <pre class="body-text">
+    To create the app you need the latest Blazor templates. You can install them for the .NET Core CLI with the following command:
+    </pre>
+        <div class="card-header container-fluid text-light">
+            <a class="text-white align-self-center">
+                <span class="blue"> dotnet run</span>
+                <span class="green"> --framework</span>
+                <span class="text-white"> netstandard2.1</span>
+            </a>
+        </div>
+    </div>
+   
+
+    <div class="card-body">
+        <div class="title  align-self-center">a.</div>
+        <pre class="body-text">
+Microsoft Graph contains APIs that provide access to Microsoft 365 data for your users, 
+and it supports the tokens issued by the Microsoft identity platform, which makes it a good protected 
+API to use as an example. In this section, you add code to call Microsoft Graph and display the user's 
+emails on the application's "Fetch data" page.
+
+This section is written using a common approach to calling a protected API using a named client. 
+The same method can be used for other protected APIs you want to call. However, if you do plan to call Microsoft 
+Graph from your application you can use the Graph SDK to reduce boilerplate. The .NET docs contain instructions 
+on how to use the Graph SDK.
+        </pre>
+
+        <row class="align-content-center align-self-center">
+            <div class="title "><LoginDisplay /></div>
+        </row>
+
+    </div>
+</div>
+
