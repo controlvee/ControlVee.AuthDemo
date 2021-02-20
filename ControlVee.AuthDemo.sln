@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControlVee.AuthDemo", "ControlVee.AuthDemo.csproj", "{2F7B48C5-D050-4737-96CC-F02526F3FA24}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2F7B48C5-D050-4737-96CC-F02526F3FA24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F7B48C5-D050-4737-96CC-F02526F3FA24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F7B48C5-D050-4737-96CC-F02526F3FA24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F7B48C5-D050-4737-96CC-F02526F3FA24}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F9C75191-B189-4604-9186-8C033AA06FBF}
+	EndGlobalSection
+EndGlobal
