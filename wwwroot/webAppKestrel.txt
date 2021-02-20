@@ -1,0 +1,3 @@
+https://docs.microsoft.com/en-us/azure/active-directory/develop/tutorial-blazor-webassembly
+
+dotnet new blazorwasm2 --auth SingleOrg --calls-graph -o ControlVee.AuthDemo --client-id "0eccba2b-fa95-438a-9f13-9c228c61c5c4" --tenant-id "25de1216-e744-4b56-818b-0c8e9a3f0c7d"
